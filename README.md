@@ -28,8 +28,8 @@ my-app/
   node_modules/
   package.json
   public/
-    index.html
-    favicon.ico
+   index.html
+   favicon.ico
   src/
 	App.css
     App.js
