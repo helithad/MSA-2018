@@ -1,20 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500");
 
 body {
-  background: #016FB9;
-  font-family: 'Montserrat', sans-serif;
+  background: #0277BD;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   color: #FAFAFA;}
 
-.squareComponent {
+.backgroundCard {
     margin: auto;
-    background: #EC4E20;
+    background: #1A237E;
     max-width: 50%;
-    box-shadow: 1px 1px 4px #333; 
+    box-shadow: 2px 2px 6px #424242; 
+    border-radius: 5px;
 }
 
 .header {
-
     display: flex;
     justify-content: center;
     margin-top: 100px;
@@ -22,6 +22,11 @@ body {
     font-size: 20px; }
     .header img {
     margin-left: 10px; }
+
+    .header .weatherIcon {
+        margin-top: 29px;
+        margin-left: 10px;
+    }
 
 .instructions {
     display: flex;
@@ -31,7 +36,7 @@ body {
     width: 25%;
     text-align: center;
     font-size: .9em;
-    color: #C0C0C0; }
+    color: #BDBDBD; }
 
 .inputZip {
     display: flex;
@@ -44,17 +49,17 @@ body {
     border: none;
     border-radius: 2px;
     outline: none;
-    background: #e8e8e8;
+    background: #E0E0E0;
     padding-left: 10px;
-            box-shadow: 1px 1px 2px #333; }
+    box-shadow: 1px 1px 2px #424242; }
   .inputZip Button {
     padding: 10px 18px;
     border-radius: 2px;
     margin-left: 4px;
     border: none;
-    background: #EC4E20;
+    background: #F57F17;
     color: #FFF;
-    box-shadow: 1px 1px 4px #333; }
+    box-shadow: 1px 1px 4px #424242; }
 
 .loader {
     display: flex;
@@ -74,55 +79,52 @@ body {
     align-items: center;
     color: #797979;
     margin-top: 50px; }
-    .weatherCardContainer h4 {
-      color: #a8a8a8; }
-    .weatherCardContainer .weatherCard {
-      min-height: 320px;
-      min-width: 320px;
-      background: #FFF;
-              box-shadow: 1px 1px 4px #333;
-      border-radius: 2px;
-      display: flex;
-              flex-direction: column;
-              align-items: center;
-      position: relative;
-      margin-top: 20px; }
-      .weatherCardContainer .weatherCard img {
-        margin-top: 100px; }
-      .weatherCardContainer .weatherCard .conditionsOverview {
-        display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-        position: absolute;
-        min-height: 350px; }
-        .weatherCardContainer .weatherCard .conditionsOverview p:nth-child(1) {
-          font-size: 2.5em;
-          font-weight: bold;
-          margin-top: -10px;
-          margin-bottom: -10px; }
-        .weatherCardContainer .weatherCard .conditionsOverview p:nth-child(2) {
-          font-size: 1.2em; }
-      .weatherCardContainer .weatherCard .conditionDetails {
-        position: absolute;
-        bottom: 0;
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
+    .weatherCardContainer .weatherCard h4 {
+        margin-top: 200px;
         margin-bottom: 20px;
-        font-size: .9em;
-        color: #595959; }
+        color: #a8a8a8; }
+    .weatherCardContainer .weatherCard {
+        min-height: 320px;
+        min-width: 320px;
+        background: #E3F2FD;
+        box-shadow: 1px 1px 4px #424242;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        margin-top: 20px; }
 
-.change {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-    position: absolute }
-    .change p {
-    width: 25%;
-    text-align: center;
-    font-size: .9em;
-    color: #C0C0C0; }
+        .weatherCardContainer .weatherCard img {
+            margin-top: 10px;   }
+
+        .weatherCardContainer .weatherCard .generalData {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            min-height: 350px;  }
+
+        .weatherCardContainer .weatherCard .generalData p:nth-child(1) {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-top: -10px;
+            margin-bottom: -10px; }
+
+        .weatherCardContainer .weatherCard .generalData p:nth-child(2) {
+            font-size: 1.2em; }
+
+        .weatherCardContainer .weatherCard .detailedData {
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-bottom: 40px;
+            font-size: .9em;
+            color: #595959; }
+
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
